@@ -59,6 +59,20 @@ namespace PresentationLayer.Controllers
         [HttpPost]
         public ActionResult Login(LoginBO loginBO)
         {
+            if (ModelState.IsValid)
+            {
+                if (dataContext.Users.Where(m=>m.Email==loginBO.Email && m.Password==loginBO.Password).FirstOrDefault()==null)
+                {
+                    ModelState.AddModelError("Error", "Email or Password is not correct.");
+                    return View();
+                }
+                else
+                {
+                    Session["Email"] = loginBO.Email;
+
+                    RedirectToAction("Index", "Home");
+                }
+            }
             return View();
         }
     }
