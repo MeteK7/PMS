@@ -1,0 +1,14 @@
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\BusinessObjectsLayer.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\EntityFramework.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\BusinessObjectsLayer.pdb
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\bin\Debug\EntityFramework.xml
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete

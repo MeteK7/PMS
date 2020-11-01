@@ -1,0 +1,6 @@
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessObjectsLayer\bin\Debug\BusinessObjectsLayer.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessObjectsLayer\bin\Debug\BusinessObjectsLayer.pdb
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessObjectsLayer\obj\Debug\BusinessObjectsLayer.csprojAssemblyReference.cache
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessObjectsLayer\obj\Debug\BusinessObjectsLayer.csproj.CoreCompileInputs.cache
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessObjectsLayer\obj\Debug\BusinessObjectsLayer.dll
+C:\Lessons\Multi Layered Architecture\PersonalManagementSystem\BusinessObjectsLayer\obj\Debug\BusinessObjectsLayer.pdb
