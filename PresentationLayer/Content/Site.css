@@ -16,3 +16,39 @@ textarea {
     max-width: 280px;
 }
 
+.img-profile {
+    width:100px;
+    height:128px;
+}
+
+.img-education{
+    width:130px;
+    height:130px;
+}
+
+.div-icon {
+    float: left;
+    width: 10%;
+    display: block;
+    margin-top: 1px;
+}
+
+.div-text {
+    float: right;
+    width: 72%;
+}
+
+.div-feature {
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+
+p.topic {
+    margin-top: 3%;
+    font-size: 95%;
+}
+
+h3.corporation{
+    margin-bottom:0px;
+}
