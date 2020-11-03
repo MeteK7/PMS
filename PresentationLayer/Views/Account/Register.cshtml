@@ -51,11 +51,11 @@
                     <input type="reset" value="Reset" class="btn btn-danger"/>
                 </div>
             </div>
-            @*<div class="row">
+            <div>
                 <div>
-                    @Html.ValidationMessageFor(model => model.SuccessMessage, null, new { @class="alert alert-success"})
+                    @Html.ValidationMessage("Error", null, new { @class="text text-danger"})
                 </div>
-            </div>*@
+            </div>
         </div>
     }
 </fieldset>

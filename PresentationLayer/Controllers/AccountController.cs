@@ -30,21 +30,28 @@ namespace PresentationLayer.Controllers
         {
             if (ModelState.IsValid)
             {
-                User user = new User();
-                userBO = new UserBO();
+                if (!dataContext.Users.Any(m => m.Email == userBO.Email))
+                {
+                    User user = new User();
+                    userBO = new UserBO();
 
-                user.FirstName = userBO.FirstName;
-                user.LastName = userBO.LastName;
-                user.Password = userBO.Password;
-                user.Email = userBO.Email;
-                user.CreatedOn = DateTime.Now;
-                userBO.SuccessMessage = "User has been added successfully.";
+                    user.FirstName = userBO.FirstName;
+                    user.LastName = userBO.LastName;
+                    user.Password = userBO.Password;
+                    user.Email = userBO.Email;
+                    user.CreatedOn = DateTime.Now;
+                    userBO.SuccessMessage = "User has been added successfully.";
 
-                dataContext.Users.Add(user);
-                dataContext.SaveChanges();
+                    dataContext.Users.Add(user);//Adding to the user table.
+                    dataContext.SaveChanges();//Saving the changes of database.
 
-               
-                return View("Register");
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("Error", "Email already exists.");
+                    return View();
+                }
             }
 
             return View();
@@ -70,10 +77,16 @@ namespace PresentationLayer.Controllers
                 {
                     Session["Email"] = loginBO.Email;
 
-                    RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");
                 }
             }
             return View();
+        }
+
+        public ActionResult Logout() 
+        {
+            Session.Abandon();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
