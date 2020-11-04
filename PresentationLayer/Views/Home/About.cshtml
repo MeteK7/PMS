@@ -3,151 +3,193 @@
     ViewBag.Title = "About";
 }
 
-<h2>About</h2>
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url('../Images/blurred.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+}
 
-<div id="fh5co-main">
-    <div class="fh5co-tab-wrap">
-        <ul class="fh5co-tab-menu">
-            <li class="active"><a href="#" data-tab="1"><span class="icon icon-glass"></span><span class="menu-text">Profile</span></a></li>
-            <li><a href="#" data-tab="2"><span class="icon icon-graduation-cap"></span><span class="menu-text">Education</span></a></li>
-            <li><a href="#" data-tab="3"><span class="icon icon-black-tie"></span><span class="menu-text">Experience</span></a></li>
-            <li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-fighter-jet"></span><span class="menu-text">Skills</span></a></li>
-        </ul>
-        <div class="fh5co-tab-content active" data-content="1">
-            <div class="fh5co-content-inner text-center">
-                <div class="row row-bottom-padded-sm">
-                    <div class="col-md-12">
-                        <figure>
-                            <img src="~/Images/profile_img.jpg" class="img-profile" alt="You cannot see my profile photo for now:/">
-                        </figure>
-                        <h1>Mete Kaba</h1>
-                        <p>A software engineer with a desire to build stable and powerful applications for people. Working as a team is one of the primary goals. Extensive collaboration ability to work with a team. Got experience in local and web applications using C # WPF, ASP.Net, Java, PHP, and MSSQL database technologies. Experience in GitHub version control system to work remotely and collaboratively. Love learning new things and tools.</p>
-                    </div>
+<div id="main">
+    <div class="tab-wrap">
+        <div class="tab-menu">
+            <button class="tab-links" onclick="openTab(event, 'profile')" id="defaultOpen">Profile</button>
+            <button class="tab-links" onclick="openTab(event, 'education')">Education</button>
+            <button class="tab-links" onclick="openTab(event, 'experience')">Experience</button>
+            <button class="tab-links" onclick="openTab(event, 'skills')">Skills</button>
+        </div>
+        <div class="tab-content" id="profile">
+            <div class="div-profile">
+                <figure>
+                    <img src="~/Images/profile_img.jpg" class="img-profile" alt="You cannot see my profile photo for now:/">
+                </figure>
+                <h1>Mete Kaba</h1>
+                <p>A software engineer with a desire to build stable and powerful applications for people. Working as a team is one of the primary goals. Extensive collaboration ability to work with a team. Got experience in local and web applications using C # WPF, ASP.Net, Java, PHP, and MSSQL database technologies. Experience in GitHub version control system to work remotely and collaboratively. Love learning new things and tools.</p>
+            </div>
+            <div class="div-experience">
+                <div class="sub-div-experience">
+                    <h1 class="experience-year">1</h1>
                 </div>
-                <div class="row">
-                    <div class="col-md-12 fh5co-counter">
-                        <div class="fh5co-number fh5co-left">1</div>
-                        <div class="fh5co-text">
-                            <h3 class="border-bottom">Years of experience in Web Design</h3>
-                            <p>Sorry for my years of experience:/ As a new graduated student, let's talk frankly :).</p>
-                        </div>
-                    </div>
+                <div class="sub-div-experience">
+                    <h3 class="experience-text">Years of experience in Web Design</h3>
                 </div>
-                <ul class="fh5co-social">
-                    <li><a href="#"><i class="icon-envelope"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="https://www.instagram.com/metekaba"><i class="icon-instagram"></i></a></li>
-                    <li><a href="#"><i class="icon-google"></i></a></li>
-                    <li><a href="https://https://www.linkedin.com/in/mete-kaba-89b5221b8/"><i class="icon-linkedin"></i></a></li>
+            </div>
+            <div class="div-experience">
+                <div class="sub-div-experience">
+                    <h1 class="experience-year">3</h1>
+                </div>
+                <div class="sub-div-experience">
+                    <h3 class="experience-text">Years of experience in Desktop Programming (especially C# WPF)</h3>
+                </div>
+            </div>
+            <div class="div-experience-sum">
+                <small>Sorry for my years of experience:/ As a new graduated student, let's talk frankly :)</small>
+            </div>
+            <div class="div-social">
+                <ul id="list-social">
+                    <li><a href="https://www.instagram.com/metekaba" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC5Xq8BrAJPB86Tzl42oKa3g" title="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://https://www.linkedin.com/in/mete-kaba-89b5221b8/" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/MeteK7" title="Github"><i class="fab fa-github"></i></a></li>
                 </ul>
             </div>
         </div>
-        <div class="fh5co-tab-content" data-content="2">
-            <div class="fh5co-content-inner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Here is my low-level education.</p>
-
-                        <div class="div-feature">
-                            <div class="div-icon">
-                                <img class="img-education" src="~/Images/Toros_University_Logo.png" />
-                            </div>
-                            <div class="div-text">
-                                <h3 class="corporation">Toros University</h3>
-                                <small>2015-2020</small>
-                                <p class="topic">Computer and Software Engineering in Bachelor's Degree</p>
-                            </div>
+        <div class="tab-content" id="education">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Here is my low-level education.</p>
+                    <div class="div-corporation">
+                        <div class="div-logo">
+                            <img class="img-logo" src="~/Images/Toros_University_Logo.png" />
                         </div>
-
-                        <div class="div-feature">
-                            <div class="div-icon">
-                                <img class="img-education" src="~/Images/logo_pwsz_jaroslaw.png" />
-                            </div>
-                            <div class="div-text">
-                                <h3 class="corporation">PWSTE w Jarosławiu</h3>
-                                <small>2018-2018</small>
-                                <p class="topic">Erasmus+ Programme</p>
-                            </div>
+                        <div class="div-text">
+                            <h3 class="corporation">Toros University</h3>
+                            <small>2015-2020</small>
+                            <p class="topic">Computer and Software Engineering in Bachelor's Degree</p>
+                        </div>
+                    </div>
+                    <div class="div-corporation">
+                        <div class="div-logo">
+                            <img class="img-logo" src="~/Images/logo_pwsz_jaroslaw.png" />
+                        </div>
+                        <div class="div-text">
+                            <h3 class="corporation">PWSTE w Jarosławiu</h3>
+                            <small>2018-2018</small>
+                            <p class="topic">Erasmus+ Programme</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fh5co-tab-content" data-content="3">
-            <div class="fh5co-content-inner">
-                <div class="row">
-                    <div class="col-md-12">
-
-                        <p>I had chance to work with these cool companies.</p>
-
-                        <div class="fh5co-feature">
-                            <div class="fh5co-icon">
-                                <i class="icon-black-tie"></i>
-                            </div>
-                            <div class="fh5co-text">
-                                <h2>Temsa Global</h2>
-                                <h3>03/02/2020-15/05/2020</h3>
-                                <p>Long-Term Internship</p>
-                            </div>
+        <div class="tab-content" id="experience">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>I had chance to work with these cool companies.</p>
+                    <div class="div-corporation">
+                        <div class="div-logo">
+                            <img class="img-logo" src="~/Images/temsa-logo.png" />
                         </div>
-
-                        <div class="fh5co-feature">
-                            <div class="fh5co-icon">
-                                <i class="icon-black-tie"></i>
-                            </div>
-                            <div class="fh5co-text">
-                                <h2>Kardelen Software</h2>
-                                <h3>06/24/2019-07/24/2019</h3>
-                                <p>Summer Internship</p>
-                            </div>
+                        <div class="div-text">
+                            <h3 class="corporation">Temsa Global</h3>
+                            <small>03/02/2020-15/05/2020</small>
+                            <p class="topic">Long-Term Internship</p>
                         </div>
-
                     </div>
-
+                    <div class="div-corporation">
+                        <div class="div-logo">
+                            <img class="img-logo" src="~/Images/kardelen-logo.png" />
+                        </div>
+                        <div class="div-text">
+                            <h3 class="corporation">Kardelen Software</h3>
+                            <small>06/24/2019-07/24/2019</small>
+                            <p class="topic">Summer Internship</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="fh5co-tab-content" data-content="4">
-            <div class="fh5co-content-inner">
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>Have a look at my skills. Someone must have used a special device to identify my knowledge in percentage:)</p>
+        <div class="tab-content" id="skills">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Have a look at my skills. Someone must have used a special device to identify my knowledge in percentage:)</p>
+                </div>
+                <div class="c100 p50">
+                    <span><strong>C#</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="70"><span><strong>HTML</strong>70%</span></div>
+                </div>
+                <div class="c100 p60">
+                    <span><strong>MVC</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="70"><span><strong>CSS</strong>70%</span></div>
+                </div>
+                <div class="c100 p30">
+                    <span><strong>Java</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="50"><span><strong>JavaScript</strong>50%</span></div>
+                </div>
+                <div class="c100 p80">
+                    <span><strong>Arduino</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="40"><span><strong>PHP</strong>40%</span></div>
+                </div>
+                <div class="c100 p70">
+                    <span><strong>HTML</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+                </div>
+                <div class="c100 p70">
+                    <span><strong>CSS</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="85"><span><strong>MSSQL</strong>85%</span></div>
+                </div>
+                <div class="c100 p50">
+                    <span><strong>JS</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="50"><span><strong>C#</strong>50%</span></div>
+                </div>
+                <div class="c100 p40">
+                    <span><strong>PHP</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="70"><span><strong>ASP.NET MVC</strong>70%</span></div>
+                </div>
+                <div class="c100 p50">
+                    <span><strong>MySQL</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="30"><span><strong>Java</strong>30%</span></div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                        <div class="chart" data-percent="80"><span><strong>Arduino Programming</strong>80%</span></div>
+                </div>
+                <div class="c100 p55">
+                    <span><strong>MSSQL</strong></span>
+                    <div class="slice">
+                        <div class="bar"></div>
+                        <div class="fill"></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <footer id="fh5co-footer">
+    <footer>
         <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center">
                 <small>
