@@ -115,8 +115,8 @@
     <Content Include="Content\css\v4-shims.css" />
     <Content Include="Content\css\v4-shims.min.css" />
     <Content Include="Content\icomoon.css" />
+    <Content Include="Content\Login.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\style.css" />
     <Content Include="Content\webfonts\fa-brands-400.svg" />
     <Content Include="Content\webfonts\fa-regular-400.svg" />
     <Content Include="Content\webfonts\fa-solid-900.svg" />
@@ -125,6 +125,7 @@
     <Content Include="Images\blurred.jpg" />
     <Content Include="Images\kardelen-logo.png" />
     <Content Include="Images\kardelen-white-logo.png" />
+    <Content Include="Images\login-background.png" />
     <Content Include="Images\logo_pwsz_jaroslaw.png" />
     <Content Include="Images\lines.jpg" />
     <Content Include="Images\profile_img.jpg" />
@@ -134,7 +135,6 @@
     <Content Include="Scripts\about-page.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\style.css.map" />
     <Content Include="Content\webfonts\fa-brands-400.eot" />
     <Content Include="Content\webfonts\fa-brands-400.ttf" />
     <Content Include="Content\webfonts\fa-brands-400.woff" />

@@ -2,66 +2,118 @@
 @{
     ViewBag.Title = "Login";
 }
+@section head{
+    <style type="text/css">
+        body {
+            background-image: url('../Images/login-background.png');
+            background-repeat: repeat-x;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
+}
+@*<fieldset>
+        <legend>
+            User Login
+        </legend>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model=>model.Email)
+                    </td>
+                    <td>
+                        @Html.TextBoxFor(model=>model.Email)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.ValidationMessageFor(model=>model.Email, null, new {@class="text text-danger"})
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.LabelFor(model=>model.Password)
+                    </td>
+                    <td>
+                        @Html.PasswordFor(model=>model.Password)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        @Html.ValidationMessageFor(model=>model.Password, null, new {@class="text text-danger"})
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="submit" value="Login"/>
+                                </td>
+                                <td>
+                                    <input type="reset" value="Reset"/>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.ValidationMessage("Error", null, new { @class="text text-danger"})
+                    </td>
+                </tr>
+            </table>
+        }
+    </fieldset>*@
 
-<fieldset>
-    <legend>
-        User Login
-    </legend>
-    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
-    {
-        <table>
-            <tr>
-                <td>
-                    @Html.LabelFor(model=>model.Email)
-                </td>
-                <td>
-                    @Html.TextBoxFor(model=>model.Email)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    @Html.ValidationMessageFor(model=>model.Email, null, new {@class="text text-danger"})
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @Html.LabelFor(model=>model.Password)
-                </td>
-                <td>
-                    @Html.PasswordFor(model=>model.Password)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    @Html.ValidationMessageFor(model=>model.Password, null, new {@class="text text-danger"})
-                </td>
-            </tr>
-            <tr>
-                <td>
-                </td>
-                <td>
-                    <table>
-                        <tr>
-                            <td>
-                                <input type="submit" value="Login"/>
-                            </td>
-                            <td>
-                                <input type="reset" value="Reset"/>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    @Html.ValidationMessage("Error", null, new { @class="text text-danger"})
-                </td>
-            </tr>
-        </table>
-    }
-</fieldset>
+<center>
+    <div class="div-temsa-logo">
+        <img class="img-temsa-logo" src="~/Images/Logos/temsa-logo.jpg" />
+    </div>
 
+    <div class="div-main-login">
+        <h2>Login</h2>
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            <div class="form-horizontal" id="login-base-div">
+                <hr />
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Email, new { htmlAttributes = new { @class = "input-name" } })
+                        @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.Label("Password", htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.TextBoxFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Login" class="btn btn-default" />
+                        <input type="reset" value="Reset" class="btn btn-default" />
+                    </div>
+                </div>
+                <div>
+                    @Html.ValidationMessage("Error", null, new { @class = "text text-danger" })
+                </div>
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            </div>
+        }
+        @*<h3 style="color:red">@ViewData["Header"]</h3>*@
+
+    </div>
+</center>

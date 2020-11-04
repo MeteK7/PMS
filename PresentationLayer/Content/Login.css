@@ -1,0 +1,63 @@
+﻿#login-base-div {
+    margin-top: 50px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    width: 80%;
+    border-style: solid;
+    border-color: springgreen;
+    border-radius: 12px;
+    border: 4px inset #30cbf2;
+}
+
+#label-login {
+    font-size: 1vw;
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+#input-name {
+    width: 2px;
+}
+.div-temsa-logo {
+    margin-top: 15%;
+}
+
+.img-temsa-logo {
+    width: 15%;
+    height: 15%;
+    border-radius: 200px 200px 200px 200px;
+    box-shadow: 0px 0px 18px 3px rgba(0,0,0,0.75);
+}
+.div-login{
+    padding-left:5%;
+    padding-right:5%;
+}
+.div-main-login {
+    margin-top: 5%;
+    width: 40%;
+    height: 60%;
+    padding-top: 5%;
+    padding-bottom: 15%;
+    border-style: solid;
+    border-color: paleturquoise;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.57);
+    border-radius: 14px 14px 14px 14px;
+    -moz-border-radius: 14px 14px 14px 14px;
+    -webkit-border-radius: 14px 14px 14px 14px;
+    border: 4px outset #45e0d8;
+    background: rgba(217, 237, 247,0.4);
+}
+
+    .div-main-login:hover {
+        background: rgba(217, 237, 247,0.7);
+        transition: background-color 1s linear;
+    }
+
+        .p-footer{
+    color:darkgray;
+}
+
